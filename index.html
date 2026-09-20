@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Judel Federigan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <nav>
+    <div class="brand">
+      <div class="mark">J</div>
+      <div><strong>JUDEL FEDERIGAN</strong></div>
+    </div>
+    <div class="links">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a class="resume" href="resume.pdf" target="_blank" rel="noopener">↓ &nbsp; Resume</a>
+    </div>
+  </nav>
+
+  <main id="home" class="hero">
+    <section>
+      <div class="eyebrow">Hello, I'm Judel</div>
+      <h1>I build <span class="gradient">small programs</span> that make a big impact.</h1>
+      <p class="intro">
+        I'm passionately curious about almost everything. If something is interesting, I want to learn how it works and build something with it.
+        I've been coding for more than 5 years, entirely self taught and freelance, and I learn best by building real things.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects"><span class="arr">→</span> View My Projects</a>
+        <a class="btn secondary" href="#contact">Get In Touch <span class="arr">→</span></a>
+        <span class="hand">let's build something cool :)</span>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/JDLFDRGN" target="_blank" rel="noopener">GitHub</a><span></span><a href="mailto:judelfederigan1@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <section class="visual">
+      <div class="scribble"></div>
+      <div class="blob-container">
+        <div class="blob">
+          <img class="portrait" src="img/myself/img1.png" alt="Judel Federigan">
+        </div>
+      </div>
+      <div class="note">Better<br>tools.<br>Better days.</div>
+    </section>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-block">
+    <div class="about-grid">
+      <div class="bio">
+        <span class="kicker">A little about me</span>
+        <h2 style="font:700 clamp(28px,4vw,38px) 'Space Grotesk'; letter-spacing:-.03em; margin:6px 0 20px;">Self-taught,<br><span class="cyan">and still building.</span></h2>
+          <p>I spent three years studying Electronics Engineering at TUP Taguig before leaving to work as a line technician, maintaining test handlers for semiconductor chips at Analog Devices. Somewhere in that year of troubleshooting machines, I got curious about the software running them and started teaching myself to code.</p>
+          <p>Even growing up, I've always been a bit lazy, in the sense that I hate doing the same thing twice. Instead of fighting that instinct, I turned it into an advantage: if a task is repetitive, I'd rather spend the time to automate it once than do it by hand forever. That mindset is what pulled me into the world of automation, and it still drives most of what I build today.</p>
+          <p>My interests are broad on purpose. I believe everything is interconnected, and that you learn faster by learning indirectly, the same way learning Spanish makes Italian and Portuguese far easier to pick up. Every new field I explore, whether it's software, electronics, or data, sharpens how I approach the others. I'm not tied to a single title, and I'm open to remote, hybrid, or on-site roles across technician, PLC programming, data analysis, cybersecurity, and full-stack development.</p>
+          <div class="tagline">Always learning. Always building.</div>
+        </div>
+      <div class="explore">
+        <span class="kicker">Currently exploring</span>
+
+        <div class="explore-item">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+          </div>
+          <div>
+            <div class="explore-num">01</div>
+            <h4>Reverse engineering</h4>
+            <p>Reading assembly to work out what compiled programs actually do, one instruction at a time.</p>
+          </div>
+        </div>
+
+        <div class="explore-item">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <div>
+            <div class="explore-num">02</div>
+            <h4>Web penetration testing</h4>
+            <p>Finding and exploiting web app vulnerabilities in legal, controlled labs.</p>
+          </div>
+        </div>
+
+        <div class="explore-item">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <div>
+            <div class="explore-num">03</div>
+            <h4>Digital forensics</h4>
+            <p>Investigating disks, memory, and logs to piece together what happened on a system.</p>
+          </div>
+        </div>
+
+        <p class="explore-note">Not an expert, but learning in public :)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-block">
+    <div class="section-head">
+      <span class="kicker">Featured work</span>
+      <h2>Projects</h2>
+      <p>A production platform and a family of data-collector tools, all built solo.</p>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">01</div><div class="proj-cat">Data &amp; Analytics</div></div>
+      <div class="proj-info">
+        <h3>NBA Data Collector</h3>
+        <p class="pdesc">A desktop data-analytics app that pulls NBA stats into clean, analysis-ready tables. Originally built for professional sports bettors who need fast, reliable numbers to research matchups and spot trends without hand-copying figures off a stats site.</p>
+        <ul class="feats">
+          <li>Pulls live data straight from stats.nba.com via nba_api: league leaders, box scores, shot charts, and game logs</li>
+          <li>Structured, export-ready tables that drop directly into a spreadsheet or betting model</li>
+          <li>Native desktop GUI built with PySide6, so running a data pull takes clicks, not code</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">Python</span><span class="tchip">nba_api</span><span class="tchip">PySide6</span><span class="tchip">Desktop App</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/nba-data-collector/img1.png" alt="NBA Data Collector showing league leaders table"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/nba-data-collector/img2.png" alt="NBA Data Collector screenshot"></div>
+          <div class="thumb more" data-more="+1"><img src="img/nba-data-collector/img3.png" alt="NBA Data Collector screenshot"></div>
+        </div>
+        <img class="hidden-extra" src="img/nba-data-collector/img4.png" alt="NBA Data Collector screenshot">
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">02</div><div class="proj-cat">Financial Data</div></div>
+      <div class="proj-info">
+        <h3>Forex Data Collector</h3>
+        <p class="pdesc">A desktop data-analytics app that scrapes historical forex data from the Dukascopy broker into clean, structured datasets. Built for algorithmic traders who need large, reliable price histories without downloading data pair by pair.</p>
+        <ul class="feats">
+          <li>Scrapes historical market data from Dukascopy across multiple currency pairs</li>
+          <li>Flexible date-range selection and multiple timeframe options for any resolution</li>
+          <li>Exports to multiple file formats, ready for a backtesting engine or analysis workflow</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">Python</span><span class="tchip">PySide6</span><span class="tchip">Dukascopy</span><span class="tchip">Desktop App</span></div>
+      </div>
+      <div class="proj-media single">
+        <div class="main-shot"><img src="img/fx-data-collector/forex-data.png" alt="FX Data Collector showing EUR/USD candlestick chart"></div>
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">03</div><div class="proj-cat">Media Analytics</div></div>
+      <div class="proj-info">
+        <h3>YouTube Data Collector</h3>
+        <p class="pdesc">A desktop data-analytics app for YouTube channels and videos, turning channel, video, playlist, and comment data into interactive analytics with full reports exported as images or PDFs, not just a CSV.</p>
+        <ul class="feats">
+          <li>Dedicated tabs for videos, comments, search, playlists, and top performers</li>
+          <li>Built-in analytics: views over time, upload heatmap, and engagement trends</li>
+          <li>Keyword, view, and year filters with parallel workers for large channels</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">Python</span><span class="tchip">PySide6</span><span class="tchip">YouTube API</span><span class="tchip">Desktop App</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/yt-data-collector/img1.png" alt="YouTube Data Collector channel videos table with filters and export options"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/yt-data-collector/img2.png" alt="YouTube Data Collector analytics tab with views over time, upload heatmap, and engagement charts"></div>
+          <div class="thumb more" data-more="+4"><img src="img/yt-data-collector/img3.png" alt="YouTube Data Collector screenshot"></div>
+        </div>
+        <img class="hidden-extra" src="img/yt-data-collector/img4.png" alt="YouTube Data Collector screenshot">
+        <img class="hidden-extra" src="img/yt-data-collector/img5.png" alt="YouTube Data Collector screenshot">
+        <img class="hidden-extra" src="img/yt-data-collector/img6.png" alt="YouTube Data Collector screenshot">
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">04</div><div class="proj-cat">Automation</div></div>
+      <div class="proj-info">
+        <h3>Browse Bot</h3>
+        <p class="pdesc">A Chrome extension for data analytics and browser automation. Hover and click the elements you want, no CSS selectors required, and it turns a repeating list into a structured, reusable scraping bot. Tested against real Philippine e-commerce sites.</p>
+        <ul class="feats">
+          <li>Hover a repeating list and every row and column lands in a Selection View</li>
+          <li>Saved bots automate scrolling, "Show more" clicks, and pagination</li>
+          <li>Reusable bots that re-run the same scrape on demand, exported as CSV</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">JavaScript</span><span class="tchip">Chrome Extension API</span><span class="tchip">Web Scraping</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/browse-bot/img1.png" alt="Browse Bot builder highlighting a repeating list of product cards on a marketplace page"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/browse-bot/img2.png" alt="Browse Bot selection view with the extracted table and the Save as bot settings panel"></div>
+          <div class="thumb"><img src="img/browse-bot/img3.png" alt="Browse Bot showing the exported CSV of scraped product data"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">05</div><div class="proj-cat">Automation &amp; Web</div></div>
+      <div class="proj-info">
+        <span class="badge-flag">FLAGSHIP</span>
+        <h3>SinuLead</h3>
+        <p class="pdesc">A full lead-generation and data-analytics platform built around a Google Maps business scraper, wrapped in a credit-based billing system, referral rewards, and an admin dashboard built to actually run a business on.</p>
+        <ul class="feats">
+          <li>Scrapes Google Maps businesses into structured lead tables with CSV export</li>
+          <li>Credit-based monetization: packages, GCash/Maya/PayPal, referral rewards</li>
+          <li>Admin dashboard with user analytics, credit control, and billing tracking</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">PySide6</span><span class="tchip">Playwright</span><span class="tchip">FastAPI</span><span class="tchip">PostgreSQL</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/sinulead/img1.png" alt="SinuLead admin dashboard showing user management"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/sinulead/img2.png" alt="SinuLead lead search screen with user profile modal"></div>
+          <div class="thumb more" data-more="+1"><img src="img/sinulead/img3.png" alt="SinuLead rewards page for earning credits"></div>
+        </div>
+        <img class="hidden-extra" src="img/sinulead/img4.png" alt="SinuLead billing screen with credit packages">
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">06</div><div class="proj-cat">Web Game</div></div>
+      <div class="proj-info">
+        <h3>Aniventure</h3>
+        <p class="pdesc">A web-based first-person action RPG built solo in Unity, backed by a Node.js server and a NoSQL database. A miasma is twisting animals into monsters, and a hero must track down the cause before it consumes everything else.</p>
+        <ul class="feats">
+          <li>Multiple playable classes, each with its own stats and ability kit</li>
+          <li>Real-time first-person combat with health bars, HUD, and enemy AI</li>
+          <li>Branching NPC dialogue, minimap, and quests driving the central mystery</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">Unity</span><span class="tchip">C#</span><span class="tchip">Node.js</span><span class="tchip">NoSQL</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/aniventure/img1.png" alt="Aniventure gameplay screenshot"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/aniventure/img2.png" alt="Aniventure gameplay screenshot"></div>
+          <div class="thumb more" data-more="+1"><img src="img/aniventure/img3.png" alt="Aniventure gameplay screenshot"></div>
+        </div>
+        <img class="hidden-extra" src="img/aniventure/img5.png" alt="Aniventure gameplay screenshot">
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">07</div><div class="proj-cat">Mobile App</div></div>
+      <div class="proj-info">
+        <span class="badge-flag">MOBILE APP</span>
+        <h3>FreshSpin</h3>
+        <p class="pdesc">A native Android laundry-service app backed by a Node.js server, with a customer side for booking, tracking, and paying via QR code, and an admin side for managing orders, users, and revenue.</p>
+        <ul class="feats">
+          <li>Customer side: services, add-ons, checkout, and live order status</li>
+          <li>QR scanning at pickup/drop-off plus an itemized payment flow</li>
+          <li>Admin dashboard for order counts, revenue trends, and active users</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">Kotlin</span><span class="tchip">Android SDK</span><span class="tchip">Node.js</span><span class="tchip">QR Code</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/freshspin/img1.png" alt="FreshSpin admin dashboard and home screen with laundry services"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/freshspin/img2.png" alt="FreshSpin QR code scanning screens"></div>
+          <div class="thumb more" data-more="+1"><img src="img/freshspin/img3.png" alt="FreshSpin service add-ons and checkout screen"></div>
+        </div>
+        <img class="hidden-extra" src="img/freshspin/img4.png" alt="FreshSpin payment success and transaction details">
+      </div>
+    </div>
+
+    <div class="proj-row">
+      <div class="proj-index"><div class="proj-num">08</div><div class="proj-cat">Robotics</div></div>
+      <div class="proj-info">
+        <h3>PID Line-Following Robot</h3>
+        <p class="pdesc">A line-following robot with a LEGO Technic chassis and fully custom electronics: an ESP32 reads a 3-sensor IR array and runs a PID control loop to steer the drive motors and keep the bot tracking the line.</p>
+        <ul class="feats">
+          <li>Custom electronics hand-wired onto a LEGO chassis: ESP32, IR array, motor driver</li>
+          <li>PID loop corrects motor speed in real time to stay on the line</li>
+          <li>From breadboard prototyping to a tuned, fully wired robot</li>
+        </ul>
+        <div class="proj-links"><span class="tchip">ESP32</span><span class="tchip">C/C++ (Arduino)</span><span class="tchip">PID Control</span></div>
+      </div>
+      <div class="proj-media">
+        <div class="main-shot"><img src="img/pid-line-following-lego-bot/img1.png" alt="LEGO Technic chassis of the line-following robot"></div>
+        <div class="thumb-col rows-2">
+          <div class="thumb"><img src="img/pid-line-following-lego-bot/img2.png" alt="Underside view showing the three IR line sensors"></div>
+          <div class="thumb more" data-more="+1"><img src="img/pid-line-following-lego-bot/img3.png" alt="Breadboard prototyping the sensor array and ESP32"></div>
+        </div>
+        <img class="hidden-extra" src="img/pid-line-following-lego-bot/img4.png" alt="Underside of the finished robot with custom electronics">
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-block">
+    <div class="skills-layout">
+      <div class="skills-intro">
+        <span class="kicker">What I bring</span>
+        <h2>Skills<br><span class="cyan">that build solutions.</span></h2>
+        <p>A mix of software development, data, automation, AI, and hands-on electronics experience. I focus on practical tools and technologies that help me build, solve, and improve.</p>
+        <div class="rule"></div>
+        <div class="skills-tag">Better tools. Better solutions.</div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <div>
+            <div class="skill-num">01</div>
+            <h3>Frontend</h3>
+            <p>Building clean, responsive interfaces for the web and the desktop.</p>
+            <div class="chip-row"><span class="tchip">HTML</span><span class="tchip">CSS</span><span class="tchip">JS</span><span class="tchip">Java</span><span class="tchip">Python</span></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></svg>
+          </div>
+          <div>
+            <div class="skill-num">02</div>
+            <h3>Backend</h3>
+            <p>Server logic, APIs, and authentication behind the apps I build.</p>
+            <div class="chip-row"><span class="tchip">Node.js</span><span class="tchip">PHP</span><span class="tchip">Python</span><span class="tchip">API Integration</span></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+          </div>
+          <div>
+            <div class="skill-num">03</div>
+            <h3>Database</h3>
+            <p>Designing and querying the data that powers each project.</p>
+            <div class="chip-row"><span class="tchip">MySQL</span><span class="tchip">PostgreSQL</span><span class="tchip">SQLite</span><span class="tchip">NoSQL</span></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+          </div>
+          <div>
+            <div class="skill-num">04</div>
+            <h3>Data Analytics</h3>
+            <p>Collecting, cleaning, and turning raw data into something useful.</p>
+            <div class="chip-row"><span class="tchip">Web Scraping</span><span class="tchip">Data Modeling</span><span class="tchip">Reports &amp; Charts</span></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+          </div>
+          <div>
+            <div class="skill-num">05</div>
+            <h3>Electronics &amp; Hardware</h3>
+            <p>Hands-on experience with hardware, testing, and system maintenance.</p>
+            <div class="chip-row"><span class="tchip">Computer Hardware</span><span class="tchip">Mechatronics</span><span class="tchip">Robotics</span></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="explore-icon">
+            <svg viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+          </div>
+          <div>
+            <div class="skill-num">06</div>
+            <h3>Applied AI</h3>
+            <p>Using AI to build faster, learn faster, and automate more of the repetitive work.</p>
+            <div class="chip-row"><span class="tchip">Prompt Engineering</span><span class="tchip">Workflow Automation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-block">
+    <div class="exp-layout">
+
+      <div class="exp-intro">
+        <span class="kicker">Where I've been</span>
+        <h2>Experience &amp;<br><span class="cyan">education.</span></h2>
+        <p>From electronics and semiconductor testing to software, automation, data, and cybersecurity.</p>
+        <p>Every step, from hands-on technical work to self-directed learning, has shaped the way I solve problems today.</p>
+        <div class="exp-tag">Different path.<br>Same goal. Build.</div>
+      </div>
+
+      <div class="exp-main">
+        <div class="sec-label">Experience</div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-when"><b>1 YEAR</b><span>Work</span></div>
+            <div class="tl-dot"></div>
+            <div class="tl-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg></div>
+            <div class="tl-body">
+              <h3>Line Technician</h3>
+              <div class="org">Analog Devices</div>
+              <p>Maintained test handlers used for testing semiconductor chips. Troubleshooting machines all day is where I first got curious about the software running them.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-when"><b>3 YEARS</b><span>Study</span></div>
+            <div class="tl-dot"></div>
+            <div class="tl-icon"><svg viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></div>
+            <div class="tl-body">
+              <h3>Electronics Engineering</h3>
+              <div class="org">Technological University of the Philippines — Taguig</div>
+              <p>Completed three years of studying Electronics Engineering before leaving to work, then continued building skills through self-taught software development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="train">
+          <div class="sec-label">Additional training</div>
+          <div class="train-grid">
+          <div class="train-item"><span class="train-ic"><svg viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>Mechatronics Servicing NC2</div>
+          <div class="train-item"><span class="train-ic"><svg viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>Mechatronics Servicing NC3</div>
+          <div class="train-item"><span class="train-ic"><svg viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>Computer Systems Servicing NC2</div>
+          <div class="train-item"><span class="train-ic"><svg viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>Java NC3</div>
+          <div class="train-item"><span class="train-ic"><svg viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>Data Analytics Level 3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-journey">
+        <div class="sec-label">The journey</div>
+        <div class="j-step">
+          <div class="tl-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg></div>
+          <div><h4>Electronics</h4><p>Learned how hardware works.</p></div>
+        </div>
+        <div class="j-chev"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></div>
+        <div class="j-step">
+          <div class="tl-icon"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></div>
+          <div><h4>Software</h4><p>Learned to make it work.</p></div>
+        </div>
+        <div class="j-chev"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></div>
+        <div class="j-step">
+          <div class="tl-icon"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div><h4>Automation &amp; Security</h4><p>Building smarter, safer systems.</p></div>
+        </div>
+        <div class="j-quote">
+          <div class="qm">&ldquo;</div>
+          <p>Technical skills, real-world experience, and continuous learning &mdash; that's the formula.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- CONTACT -->
+  <section id="contact" class="section-block" style="border-bottom:1px solid var(--line);">
+    <div class="contact-layout">
+      <div class="contact-intro">
+        <span class="kicker">Say hello</span>
+        <h2>Let's build<br><span class="grad">something.</span></h2>
+        <div class="c-or">Or <span>automate something</span><b>.</b></div>
+        <p>I'm open to opportunities, freelance work, collaborations, and interesting projects. Whether it's a quick chat or a long-term build, I'd love to hear from you.</p>
+        <div class="c-tag">Same mind. Different ideas.</div>
+      </div>
+
+      <div class="contact-side">
+        <div class="c-head">Get in touch</div>
+        <a class="c-row" href="mailto:judelfederigan1@gmail.com">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-value">judelfederigan1@gmail.com</div>
+            <div class="c-sub">I'll try to get back to you as soon as possible.</div>
+          </div>
+        </a>
+        <a class="c-row" href="https://github.com/JDLFDRGN" target="_blank" rel="noopener">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></div>
+          <div>
+            <div class="c-label">GitHub</div>
+            <div class="c-value">github.com/JDLFDRGN</div>
+            <div class="c-sub">Check out my projects and code.</div>
+          </div>
+        </a>
+        <a class="c-row" href="tel:+639654877458">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-value">0965 487 7458</div>
+            <div class="c-sub">Call or text, whichever is easier.</div>
+          </div>
+        </a>
+        <div class="c-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg></div>
+          <div>
+            <div class="c-label">Available for</div>
+            <div class="c-value">Remote <i>&middot;</i> Hybrid <i>&middot;</i> On-site</div>
+            <div class="c-sub">Based in Taguig City, Philippines. Open to the right opportunities.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-note" aria-hidden="true">// Good<br>// people<br>// build<br>// great<br>// things</div>
+    </div>
+  </section>
+
+<footer>
+  <div class="foot-bottom">
+    <span>&copy; <span id="yr">2026</span> Judel Federigan. All rights reserved.</span>
+  </div>
+</footer>
+
+</div>
+<div class="lightbox-overlay" id="lightbox">
+  <div class="lightbox-img-wrap">
+    <img id="lightbox-img" src="" alt="">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
